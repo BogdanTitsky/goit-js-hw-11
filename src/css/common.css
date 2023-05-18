@@ -10,6 +10,8 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+
+  margin: 0;
 }
 
 img {
@@ -44,8 +46,4 @@ img {
 button {
   width: 100px;
   height: 60px;
-}
-
-span {
-  font-size: 50px;
 }

@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 11</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <span><h1>vv</h1></span>
+    <form class="search-form" id="search-form">
+      <input
+        value="dog"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+
+    <button type="button" class="load-more hidden">Load more</button>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
