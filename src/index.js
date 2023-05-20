@@ -42,11 +42,18 @@ async function clickSubmit(e) {
     Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
     gallery.innerHTML = makeMarkup(imagesArr);
     initializeLightbox();
+
+    if (totalHits < 40) {
+      Notiflix.Notify.info(
+        "We're sorry, but you've reached the end of search results."
+      );
+      btnShowMore.classList.add('hidden');
+    } else {
+      btnShowMore.classList.remove('hidden');
+    }
   } catch (error) {
     console.error(error);
   }
-
-  btnShowMore.classList.remove('hidden');
 }
 
 async function clickShowMore(e) {
